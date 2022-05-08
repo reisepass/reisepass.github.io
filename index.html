@@ -51,7 +51,7 @@
 			border-color: #d3d3d3;
 		}
 		.heading{
-			text-align: center;
+			text-align: left;
 		}
 		.block{
 			margin-top: 2vh;
@@ -73,7 +73,7 @@
 				margin-bottom: 5vh;
 			}
 			.Profile-Pic{
-				max-width: 30vw;
+				max-width: 20vw;
 			}
 			.block img{
 				max-width: 30vw;
@@ -91,6 +91,25 @@
 			.Profile-Pic{
 				max-width: 70vw;
 			}
+		@media print {
+    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+    @media print 
+{
+    @page {
+      size: A4; /* DIN A4 standard, Europe */
+      margin:0;
+    }
+    html, body {
+        width: 210mm;
+        /* height: 297mm; */
+        height: 282mm;
+        background: #FFF;
+        overflow:visible;
+        padding :30mm;
+    }
+
+}
+}
 		}
 	</style>
 	<script type="text/javascript" > 
@@ -110,62 +129,70 @@
 
 <div class="block">  
  <!-- <a href="https://bibres.com/ruben-wolff/"><img class="link-icons" alt="Bibres Icon"   src="Logo_bibres_square.png"></a>-->
-               <a href="https://medium.com/@ruben_wolff" ><img class="link-icons"  src="medium-logo.png"></a>
-               
-               <a href="https://twitter.com/Ruben_Wolff"><img class="link-icons" src="Twitter_Social_Icon_Rounded_Square_Color.png"></a> 
-
-                <a href="https://mastodon.social/@ruben_wolff"><img src="https://zappa-4n9wipu2w.s3.amazonaws.com/img/mastodon-logo.svg" alt="Mastodon Icon" class="link-icons"  "></a> 
-               <a href="https://www.linkedin.com/in/ruben-wolff-4a668782/"><img class="link-icons" src="In-2C-128px-R.png"></a>
               
-               
+            
+  
+	 	</br>
+	 	 <a href="https://www.linkedin.com/in/ruben-wolff/"> linkedin.com/in/ruben-wolff/ </a></p>
+              
+                
 </div>
-<div class="block">
-	<p class="bodytext">+41 44 435 10 93<br><span id="leemail">ruben.wolff@d1-solutions</span></p>
-</div>
+ 
 
-<!-- <p class="descriptiveText"> Insight Driven Data Consultant </p> -->
 <div class="block">
-<div class="heading thesis"><p> Thesis at <img class="inline-logo" src="logo-ethz.png" href="https://www.ethz.ch" alt="ETH Zurich"> Under <a href="http://www.da.inf.ethz.ch/index.php" >Thomas Hoffmann</a> <br> <a href="master-thesis-Ruben-Wolff-Distributed-Structured-Prediction-For-3D-Image-Segmentation.pdf" >  Distributed Structured Prediction For 3D Image Segmentation  </a> <span class="tech-tags">Spark</span><span class="tech-tags">Scala</span> </p></div>  <!-- Maybe i can change Thomas Hoffmann's name to just his piecutre -->   
-<a href="master-thesis-Ruben-Wolff-Distributed-Structured-Prediction-For-3D-Image-Segmentation.pdf"><img class="content-img"   src="theis_image_placeholder.png"></a>
-
  
 	
  
 	
-<h2 class="heading"> Current Position </h2>
+   
+	<div class="pagebreak"> </div>
+<h2 class="descriptiveText"> Current Projects </h2>
 <div class="block">
 	<ul>
-	<li> Working on federated AI for medical data @ <a href="https://neoglia.com" > NeoGlia </a> with <a href="http://danielhomola.com/">Daniel Homola</a> </li>
-	<ul>
-</div>
-
-<h2 class="heading"> Recent Public Talks </h2>
+		<li>
+		Designed data architecture and incentive engineering on the decentralized "LinkedIn Killer". The product idea is simple: reproduce the recruiting features of LinkedIn on a community owned federated infrastructure with revenue split between users, investors and recruiters on-chain.
+		<ul>Company: Stealth mode startup with a Ukrainian core team. The project is on hold since the beginning of the Russian invasion of Ukraine.</ul>	
+		<ul><span class="tech-tags">Solidity</span><span class="tech-tags">Postgres</span><span class="tech-tags">Kafka</span></ul>
+		</li>
+		<li> Designed and lead the implementation team for a new enterprise wide real time message bus. The new system could auto-scale up to 30000 messages per second which could be read via streaming, big data bulk or API access with full access control over active directory. Real time Machine learning models where utilized to align multiple IOT sensors for most accurate ball and player tracking as well as player action classification. <ul> Consulting Client: Sports events company in the top 5 worldwide</ul><ul><span class="tech-tags">Kafka</span><span class="tech-tags">Kubernetes</span><span class="tech-tags">Azure</span><span class="tech-tags">Flink</span> </ul> </li>
+	</ul>
+<h2 class="descriptiveText"> Past Independent Consulting </h2>
 <div class="block">
-	<ul>
-	<li> Automating insurance claim processing: Using NLP methods to learn sparse spaces - at - SDS 2018 <a href="https://sds2018.ch/program-2018/automating-insurance-claim-processing-using-nlp-methods-to-learn-sparse-spaces" > Slides </a> </li>
-	<li> The surprising Utility of NLP algorithms on non Text data  - at - SwissText 2018 - <a href="https://www.swisstext.org/accepted.html#swiss"> agenda </a> </li>
-	<li> Machine Learning mustn't be a Black box - at - Certificate of Advanced Studies ZFH in Claims Management (12 ECTS)  - <a href="ZHAW_Claims_Processing_Automation_20180419.pdf">slides</a> </li> 
-	<li> Real Life Benchmarking - at - SQL server 2016 launch event - <a href="http://www.d1-solutions.com/fileadmin/user_upload/d1solutions/Insights/Real-Life-Benchmark-SQL-Server-2016-Joonas-Asikainen-Ruben-Wolff-Simon-Hefti-Hans-Peter-Graenicher-D1-Solutions-Zuerich.pdf"> slides </a></li>
-	<li> Digitize the Data Store - at - Common Sense 1702 - <a href="http://www.d1-solutions.com/fileadmin/user_upload/d1solutions/Events/Presentations/Digitize_The_Datastore_-_Common_Sense_17_02_D_ONE_Zurich_Ruben_Wolff.pdf"> slides </a> - <a href="https://www.pscp.tv/DataDrivenValue/1PlKQQnQNadKE"> video </a></li> 
+<ul>
+		<li> Prototyped a series of models to improve "eDiscovery" like work in the Swiss legal context for one of the countries largest white collar crime cases. Models included NLI (sentence contradiction / agreement classification), semantic document similarity search, document classification image+text and simple OCR.  <ul> Client: Initially a Swiss law firm but now the project as spun out into a separate company competing with Relativity in the Swiss market</ul> <ul> <span class="tech-tags">Legal Tech</span> <span class="tech-tags">NLP</span><span class="tech-tags">XLM-roberta</span><span class="tech-tags">BERT</span><span class="tech-tags">DistilBERT</span><span class="tech-tags">FAISS</span> </ul> </li>
+		<li> Machine learning advisor for a oracle node reputation scoring system. <ul> Client: small community governed oracle network on Binance smartchain</a> </ul> <ul><span class="tech-tags">Blockchain</span><span class="tech-tags">Binance Smartchain</span> </ul>  </li>
+		<li> Advanced predictive risk models (for NEC, ROP, IVH, CLD, and Sepsis) for the neonatal ICU. <ul>Client: One of the largest Neonatal care providers in the USA  </ul><ul> <span class="tech-tags">Deep learning</span><span class="tech-tags">H2O</span><span class="tech-tags">R</span> </ul> </li>		
+		<li> Length of Stay prediction in burn patients. <ul> Client: Altonaer Children’s Hospital, Hamburg  </ul><ul> <span class="tech-tags">Python</span><span class="tech-tags">Deep learning</span><span class="tech-tags">XGBoost</span>  </ul></li>	
 	</ul>
 </div>
+	<div class="pagebreak"> </div>
+<h2 class="descriptiveText"> Past Startups </h2>
+<ul>
+	<li>Corepo <span class="employer"><a href="https://corepo.org/"><img src="corepo_small2.png"></img></a><span> is a knowledge graph generation project which performs monthly whole web scans to identify all companies with a web presence.  A machine learning system identifies which sites are company homepages followed by a deeper crawl and information extraction to identify metadata such as founding year, location, industry and relevant employees. The B2C end user product is designed to bridge the gap between the limitations of human curated company databases and general purpose web search engines. 
+	<ul>Funding: Angel</ul>
+	<ul>Conclusion: B2B data access agreements achieved revenue stage. Operations and sales has been handed off to a third party.</ul>
+	</li>
 
-<h2 class="heading"> Side Projects </h2>
-<div class="block">
-	<ul>
-	<li> A Look at Medium Author readership growth curves <a href="https://mediumtrends.com/"> MediumTrends.com </a> </li>
-	<li> Let your readers become part of the content. A 2D survey iframe you can embedd in your blog or landing page. <a href="https://surveyxy.com/"> SurveyXY.com </a></li>
-	<li> The missing frontpage of the Mastodon Federiverse. <a href="http://lazymastodon.com/" > LazyMastodon.com </a> </li>
+	<li><span class="employer"><a href="http://literaturereview.net/"><img src="litrev.png"></img></a><span> the AI that reads pubmed for you. This NLP project aimed to create automated literature review on the fly every day as new publications appear on pubmed.gov and clinicaltrials.gov. The target customers were medical directors in big pharma who need to make daily decisions on a diversity of drugs and conditions and have little time to read but also can not rely on the always out of date published literature reviews. The machine learning model first performs named entity recognition for interventions(drugs), conditions(MeSH) and outcome measures (such as mOS, PFS etc.) followed by a linking model to group together the outcome number to the appropriate study arm. This first version of the system was focused on clinical oncology only.  
+		<ul>Funding: Entrepreneur First</ul>
+		<ul>Conclusion: No product market fit; unlike our early adopters the broader market expected a level of accuracy and granularity only possible by full human curation </ul>
+	</li>
+
+	<li>Neoglia LTD <span class="employer"><img src="neoglia.jpeg"></img><span>  was a London based health tech startup which I co-founded with the goal of increasing the utility of sensitive medical data siloed in hospital EHR. We prototyped a federated machine learning approach where clinical data would remain within the individual hospitals servers while allowing pharma companies to build models on the data from all participating hospitals.
+		<ul>Funding: Entrepreneur First</ul>
+		<ul>Conclusion: No product market fit; most major players had unpublicized alternative means of accessing sensitive data via research collaborations or curated anonymized downloadable datasets</ul>
+	</li>
+	
+	
+	
+	
 	</ul>
-</div>
 
-<!-- 
 <div class="block">
-	<div class="heading"> How to Become a top author on Medium  </div>
-	<div class="content"><img src="Pubmed_trends.png" href="">  </div>
-</div>
--->
-<h2 class="descriptiveText"> Consulting Work <a href="http://www.d1-solutions.com/en/company/team/"><img style="max-width: 150px" alt="DOne Solutions" src="DONE-solutions-logo.png" ></a></h2>
+
+
+	<div class="pagebreak"> </div>
+<h2 class="descriptiveText"> Past Consulting with <a href="http://www.d1-solutions.com/en/company/team/"><img style="max-width: 150px" alt="DOne Solutions" src="DONE-solutions-logo.png" ></a></h2>
 <div class="block">
 	<ul>
 		<li> Data Architecture Big Data for Stock Exchange <span class="tech-tags">Hadoop</span><span class="tech-tags">Spark</span><span class="tech-tags">Cloudera</span>  </li>
@@ -174,21 +201,60 @@
 		<li> Medical Records Diabetes Risk Prediction <span class="tech-tags">R</span><span class="tech-tags">irlba</span><span class="tech-tags">H2O</span>   </li>
 		<li> Medical Insurance Claims Adjudication Automation <span class="tech-tags">R</span><span class="tech-tags">C++</span><span class="tech-tags">Python</span></li>
 		<li> Claim Processing Time/Complexity prediction <span class="tech-tags">R</span></li>
-		<li> Automate Model refresh loop of Productive Machine learning Model (Data aquisition, Model training, Model Evaluation, Hot swap productive model behind live API) <span class="tech-tags">R</span><span class="tech-tags">C++</span><span class="tech-tags">SQL-Server</span><span class="tech-tags">REST API</span></li>
-		<li> Datawarehouse Modeling and Generation Package  <span class="tech-tags"> C#</span><span class="tech-tags">SQL Server</span> </li>
-		<li> Data Architecture Datawarehouse Belgium Healthinsurance <span class="tech-tags"> Data-Vault </span> </li>
-		<li> Deployment Automation Datawarehouse  <span class="tech-tags"> Ansible</span><span class="tech-tags">Oracle</span><span class="tech-tags">Sybase</span><span class="tech-tags">Informatica</span><span class="tech-tags">SQL Server </span> </li>
+		<li> Automate Model refresh loop of Productive Machine learning Model (Data acquisition, Model training, Model Evaluation, Hot swap productive model behind live API) <span class="tech-tags">R</span><span class="tech-tags">C++</span><span class="tech-tags">SQL-Server</span><span class="tech-tags">REST API</span></li>
+		<li> Data warehouse Modeling and Generation Package  <span class="tech-tags"> C#</span><span class="tech-tags">SQL Server</span> </li>
+		<li> Data Architecture Data warehouse Belgium Health insurance <span class="tech-tags"> Data-Vault </span> </li>
+		<li> Deployment Automation Data warehouse  <span class="tech-tags"> Ansible</span><span class="tech-tags">Oracle</span><span class="tech-tags">Sybase</span><span class="tech-tags">Informatica</span><span class="tech-tags">SQL Server </span> </li>
 	</ul>
 </div>
-<h2 class="heading"> Past Jobs </h2>
-<div class="block">
-	
-
+<div class="block"> 		 
+	<spacer>
+		<br>
+<h2 class="descriptiveText"> Past Jobs </h2>
 	<ul>
-		<li>Data Scientist at <span class="employer"><img alt="Credit Suise" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTg2cHgiIGhlaWdodD0iNDJweCIgdmlld0JveD0iMCAwIDE4NiA0MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTg2IDQyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik04Mi4zLDI1LjZINzAuMXYyLjhsMC40LDBsMCwwYzAuMS0wLjQsMC44LTEuMiwxLjctMS4yYzAsMCwyLjYsMCwyLjcsMGMwLDAuMSwwLDE0LjMsMCwxNC4zaDIuNw0KCQljMCwwLDAtMTQuMiwwLTE0LjNjMC4xLDAsMi44LDAsMi44LDBjMC45LDAsMS41LDAuNSwxLjYsMWwwLDAuMWwwLjQsMEw4Mi4zLDI1LjZMODIuMywyNS42TDgyLjMsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMSwyNi41LDAsMjkuMSwwLDMxLjYNCgkJYzAsMi45LDEuMiw1LjUsMy4yLDcuM2MyLDEuOCw0LjcsMi44LDcuNSwyLjhjMS41LDAsNC40LTAuMyw3LjMtMmwwLjEtMC4xbDAuMy00bC0wLjUtMC4xbC0wLjEsMC4yYy0yLjEsNC4zLTUuMyw0LjMtNi42LDQuMw0KCQljLTUuNSwwLTgtNC42LTgtOC44YzAtNC4xLDIuNS04LjMsOC04LjNjMS43LDAsNC44LDAuNiw2LjQsNC4zbDAuMSwwLjJsMC41LTAuMkwxOCwyMy4xbC0wLjEtMC4xYy0yLjYtMS4xLTQuNy0xLjYtNi44LTEuNg0KCQlDNy43LDIxLjUsNC44LDIyLjYsMi44LDI0Ljd6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTIxLjEsMjUuNkwyMS4xLDI1LjZMMjEsMjZsMCwwYzAuMiwwLjEsMC41LDAuNywwLjUsMS40bDAsMTRoMi42YzAsMCwwLTcuMSwwLTcuMmMwLjEsMCwxLjEsMCwxLjEsMA0KCQljMSwwLjEsMS40LDAuNywyLDEuNmMwLDAsMC4xLDAuMSwwLjEsMC4xbDAuMywwLjZjMC42LDAuOSwxLjMsMi4yLDIuMSwzLjRjMC42LDAuOSwxLjMsMS4zLDIuMiwxLjVjMC42LDAuMSwxLjksMC4xLDIuNC0wLjENCgkJYzAsMCwwLjYtMC4xLDAuNi0wLjFsMC4yLTAuMWwtMC44LTAuMmMtMC4zLTAuMS0wLjgtMC4zLTEuNS0xLjFjLTAuNC0wLjUtMS4xLTEuNi0yLjEtMy4yYzAsMC0xLTEuNi0xLTEuNmMwLDAsMCwwLDAsMA0KCQljLTAuMy0wLjQtMC43LTEtMS41LTEuNWMxLjUtMC41LDIuOS0xLjgsMi45LTMuOGMwLTAuNi0wLjEtMS43LTEuMS0yLjZjLTEtMC45LTIuNS0xLjQtNC42LTEuNEwyMS4xLDI1LjZMMjEuMSwyNS42eiBNMjUuNiwyNy4xDQoJCWMyLjcsMC4xLDIuOCwyLjQsMi44LDIuN2MwLDIuMy0xLjcsMy4xLTMuMSwzLjFjMCwwLTAuOSwwLTEuMSwwYzAtMC4xLDAtNS42LDAtNS43QzI0LjUsMjcuMSwyNSwyNywyNS42LDI3LjF6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTQ4LDI1LjZMNDgsMjUuNmwwLDAuNGwwLDBjMC4yLDAuMSwwLjQsMC43LDAuNCwxLjJsMCwxNC4yaDQuNWMzLDAsNS40LTAuOSw3LjEtMi43DQoJCWMxLjQtMS41LDIuMi0zLjQsMi4yLTUuNWMwLTEuMi0wLjQtMy4xLTEuNi00LjZjLTEuNi0yLTQtMy4xLTcuMy0zLjFMNDgsMjUuNkw0OCwyNS42eiBNNTEuMSwyNy4yYzAuMSwwLDEuNCwwLDEuNCwwDQoJCWMwLjQsMCwxLjMsMCwyLDAuMWM0LjQsMC43LDQuOSw0LjQsNC45LDZjMCwxLjMtMC4yLDMuMS0xLjMsNC42QzU3LDM5LjMsNTUuMyw0MCw1Myw0MGMtMC41LDAtMS4yLDAtMS45LDANCgkJQzUxLjEsMzkuOCw1MS4xLDI3LjMsNTEuMSwyNy4yeiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik02Ny43LDI1LjZoLTMuMWwwLDAuNGwwLDBjMC4zLDAuMSwwLjUsMC43LDAuNSwxLjNsMCwxNC4xaDIuNkw2Ny43LDI1LjZMNjcuNywyNS42TDY3LjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMTIwLjcsMjUuNmgtMy4xbDAsMC40bDAsMGMwLjMsMC4xLDAuNSwwLjcsMC41LDEuM3YxNC4xaDIuNkwxMjAuNywyNS42TDEyMC43LDI1LjZMMTIwLjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNNDQuNiwyNS42aC04LjhsMC4xLDAuNGwwLDBjMC4yLDAuMSwwLjUsMC43LDAuNSwxLjRsMCwxNGg4LjhsMC42LTIuOGwtMC40LTAuMWwtMC4xLDAuMg0KCQljLTAuNywxLjEtMS41LDEuMy00LDEuM2MtMC45LDAtMS44LTAuMS0yLjQtMC4xYzAtMC4xLDAtNi4zLDAtNi40YzAuMSwwLDQuNSwwLDQuNSwwVjMyYzAsMC00LjMsMC00LjUsMGMwLTAuMSwwLTQuOCwwLTQuOQ0KCQljMC4xLDAsMy42LDAsMy42LDBjMC44LDAsMS43LDAuOCwxLjgsMS4zbDAsMC4xbDAuNCwwTDQ0LjYsMjUuNkw0NC42LDI1LjZMNDQuNiwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xNTcuNCwyNS42aC04LjhsMCwwLjRsMCwwYzAuMiwwLjEsMC41LDAuNiwwLjUsMS40bDAsMTRoOC44bDAuNi0yLjhsLTAuNC0wLjFsLTAuMSwwLjINCgkJYy0wLjcsMS4xLTEuNSwxLjMtNCwxLjNjLTAuOSwwLTEuOC0wLjEtMi40LTAuMWMwLTAuMSwwLTYuMywwLTYuNGMwLjEsMCw0LjUsMCw0LjUsMFYzMmMwLDAtNC4zLDAtNC41LDBjMC0wLjEsMC00LjgsMC00LjkNCgkJYzAuMSwwLDMuNiwwLDMuNiwwYzEsMCwxLjcsMC44LDEuNywxLjN2MC4xbDAuNCwwTDE1Ny40LDI1LjZMMTU3LjQsMjUuNkwxNTcuNCwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik05MCwyMi43Yy0wLjksMC43LTIsMS45LTIuMSw0YzAsMCwwLDAsMCwwLjFjMCwyLjUsMS42LDMuOSw0LjIsNS4yYzAsMCwwLDAsMCwwYzAuMSwwLjEsMC4zLDAuMiwxLDAuNQ0KCQljMi4yLDEuMSwzLjcsMS45LDMuNyw0LjFjMCwwLjgtMC4zLDEuOS0xLjEsMi43Yy0wLjcsMC43LTEuNiwxLTIuNywxYy0zLjMsMC00LjUtMi45LTQuOC00LjJsLTAuMS0wLjJsLTAuNiwwLjFsMC4yLDQuMUw4OCw0MA0KCQljMS4xLDAuNiwyLjgsMS42LDUuNCwxLjdjMS44LDAsMy42LTAuNyw0LjktMmMxLjEtMS4xLDEuNy0yLjUsMS43LTRjMC0zLjMtMi40LTQuNi00LjktNS45bC0wLjUtMC4zYy0yLjYtMS4zLTMuOC0yLjEtMy44LTMuNw0KCQljMC0xLjEsMC45LTIuOSwzLjEtMi45YzIuNiwwLDQsMiw0LjMsMy4ybDAuMSwwLjJsMC42LTAuMWwtMC4yLTMuNmwtMC4xLTAuMWMtMS41LTEtMy40LTEuMi00LjItMS4yQzkyLjYsMjEuNCw5MS4xLDIxLjksOTAsMjIuN3oNCgkJIi8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTEyNSwyOS42TDEyNSwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGMwLDAsMC44LDAuNCwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuOSwwLjYtMi4xLDIuNC0yLjENCgkJYzIuMSwwLDMsMS42LDMuMiwyLjRsMC4xLDAuMmwwLjUtMC4xbC0wLjItMi45bC0wLjEtMC4xYy0xLjItMC44LTIuNy0wLjktMy4zLTAuOUMxMjcuNSwyNS41LDEyNSwyNi45LDEyNSwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMzYuOCwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuNSwwLjItMS4xLDAuNi0xLjUNCgkJYzAuNC0wLjQsMS0wLjYsMS43LTAuNmMyLjEsMCwzLDEuNiwzLjIsMi40bDAuMSwwLjJsMC41LTAuMWwtMC4yLTIuOWwtMC4xLTAuMWMtMS4yLTAuOC0yLjctMC45LTMuMy0wLjkNCgkJQzEzOS40LDI1LjUsMTM2LjgsMjYuOSwxMzYuOCwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMTQuMiwyNS42bC0yLjEsMGwwLDAuNGwwLDBjMC4xLDAuMSwwLjQsMC4zLDAuNCwxLjNsMCw5YzAsMS43LTAuNiwzLjgtMy43LDMuOGMtMi45LDAtMy41LTEuNy0zLjUtNC4zDQoJCWwwLTEwLjJoLTMuM2wwLDAuNGwwLDBjMC4yLDAuMSwwLjYsMC41LDAuNiwxLjR2OC40YzAsNS4yLDMuNCw1LjgsNiw1LjhjMS4zLDAsNS40LTAuNCw1LjQtNS4zTDExNC4yLDI1LjZMMTE0LjIsMjUuNnoiLz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTE4MC4xLDIxLjFjMS45LDAuNiwzLjgsMS40LDUuOSwyLjZjLTUuMS04LjQtMTQuMS0xNy41LTIzLTIzLjRjMi4zLDIuMyw2LDcuMyw3LDEyLjYNCgkJCUMxNzMuNiwxNS41LDE3NywxOC4zLDE4MC4xLDIxLjF6Ii8+DQoJCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xODAuMSwyMS4xYy00LjQtMS40LTguMS0xLjUtMTAuOC0xLjJjMS0yLjMsMS4xLTQuNywwLjctN2MtNi43LTQuOC0xNC4yLTktMjEuMy0xMi4xDQoJCQljNS4yLDMuNSwxMSwxMy44LDEzLjQsMjQuOGM1LjItMS41LDEzLjEtMi42LDIzLjQsMC45QzE4My44LDI0LjcsMTgyLDIyLjksMTgwLjEsMjEuMXoiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE2OS45LDEyLjljMC40LDIuMywwLjMsNC43LTAuNiw3YzIuOC0wLjMsNi41LTAuMiwxMC44LDEuMkMxNzcsMTguMywxNzMuNiwxNS41LDE2OS45LDEyLjl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=" alt="Back to the home page." role="img" width="186" height="42" itemprop="logo" class="mod_logo_image"> </span> investigating market behaviorsin timeseries datasets and developing algorithmic trading strategies  Under Joerg Schmuecker <span class="tech-tags">Gamma Trading</span><span class="tech-tags">Volatility Prediction</span><span class="tech-tags">R</span><span class="tech-tags">Scala</span><span class="tech-tags">C# </span>   </li>
-		<li>Software Developer at <span class="employer"><img alt="Tufts Medical Center" src="logo-tufts-medical-center.png"> </span> developing a Personalized Oncology Drug Suggestion Tool <a href="http://wolffnote.com/">Demo</a> <span class="tech-tags">Reinforcement Learning</span><span class="tech-tags">Matlab</span><span class="tech-tags">PHP </span>  </li>
-		<li>Neuroscience Researcher at <span class="employer"><img alt="University Of Texas At Dallas" src="UTD-black-logo.png"> </span> leading a Guanfacine Selective Attention inVivo Study under <a href="https://scholar.google.com/citations?hl=en&user=Cf164ZMAAAAJ" > Marco Atzori </a>. Pre-print <a href="Guanfacine-Reinstates-Disrupted-Latent-Inhibition-Ruben-Wolff.pdf">here</a> <span class="tech-tags">Neurobiology</span><span class="tech-tags">Adrenergic receptors</span><span class="tech-tags">Matlab </span> </li>
+		<li>Data Science intern at <span class="employer"><img alt="Credit Suise" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTg2cHgiIGhlaWdodD0iNDJweCIgdmlld0JveD0iMCAwIDE4NiA0MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTg2IDQyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik04Mi4zLDI1LjZINzAuMXYyLjhsMC40LDBsMCwwYzAuMS0wLjQsMC44LTEuMiwxLjctMS4yYzAsMCwyLjYsMCwyLjcsMGMwLDAuMSwwLDE0LjMsMCwxNC4zaDIuNw0KCQljMCwwLDAtMTQuMiwwLTE0LjNjMC4xLDAsMi44LDAsMi44LDBjMC45LDAsMS41LDAuNSwxLjYsMWwwLDAuMWwwLjQsMEw4Mi4zLDI1LjZMODIuMywyNS42TDgyLjMsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMSwyNi41LDAsMjkuMSwwLDMxLjYNCgkJYzAsMi45LDEuMiw1LjUsMy4yLDcuM2MyLDEuOCw0LjcsMi44LDcuNSwyLjhjMS41LDAsNC40LTAuMyw3LjMtMmwwLjEtMC4xbDAuMy00bC0wLjUtMC4xbC0wLjEsMC4yYy0yLjEsNC4zLTUuMyw0LjMtNi42LDQuMw0KCQljLTUuNSwwLTgtNC42LTgtOC44YzAtNC4xLDIuNS04LjMsOC04LjNjMS43LDAsNC44LDAuNiw2LjQsNC4zbDAuMSwwLjJsMC41LTAuMkwxOCwyMy4xbC0wLjEtMC4xYy0yLjYtMS4xLTQuNy0xLjYtNi44LTEuNg0KCQlDNy43LDIxLjUsNC44LDIyLjYsMi44LDI0Ljd6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTIxLjEsMjUuNkwyMS4xLDI1LjZMMjEsMjZsMCwwYzAuMiwwLjEsMC41LDAuNywwLjUsMS40bDAsMTRoMi42YzAsMCwwLTcuMSwwLTcuMmMwLjEsMCwxLjEsMCwxLjEsMA0KCQljMSwwLjEsMS40LDAuNywyLDEuNmMwLDAsMC4xLDAuMSwwLjEsMC4xbDAuMywwLjZjMC42LDAuOSwxLjMsMi4yLDIuMSwzLjRjMC42LDAuOSwxLjMsMS4zLDIuMiwxLjVjMC42LDAuMSwxLjksMC4xLDIuNC0wLjENCgkJYzAsMCwwLjYtMC4xLDAuNi0wLjFsMC4yLTAuMWwtMC44LTAuMmMtMC4zLTAuMS0wLjgtMC4zLTEuNS0xLjFjLTAuNC0wLjUtMS4xLTEuNi0yLjEtMy4yYzAsMC0xLTEuNi0xLTEuNmMwLDAsMCwwLDAsMA0KCQljLTAuMy0wLjQtMC43LTEtMS41LTEuNWMxLjUtMC41LDIuOS0xLjgsMi45LTMuOGMwLTAuNi0wLjEtMS43LTEuMS0yLjZjLTEtMC45LTIuNS0xLjQtNC42LTEuNEwyMS4xLDI1LjZMMjEuMSwyNS42eiBNMjUuNiwyNy4xDQoJCWMyLjcsMC4xLDIuOCwyLjQsMi44LDIuN2MwLDIuMy0xLjcsMy4xLTMuMSwzLjFjMCwwLTAuOSwwLTEuMSwwYzAtMC4xLDAtNS42LDAtNS43QzI0LjUsMjcuMSwyNSwyNywyNS42LDI3LjF6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTQ4LDI1LjZMNDgsMjUuNmwwLDAuNGwwLDBjMC4yLDAuMSwwLjQsMC43LDAuNCwxLjJsMCwxNC4yaDQuNWMzLDAsNS40LTAuOSw3LjEtMi43DQoJCWMxLjQtMS41LDIuMi0zLjQsMi4yLTUuNWMwLTEuMi0wLjQtMy4xLTEuNi00LjZjLTEuNi0yLTQtMy4xLTcuMy0zLjFMNDgsMjUuNkw0OCwyNS42eiBNNTEuMSwyNy4yYzAuMSwwLDEuNCwwLDEuNCwwDQoJCWMwLjQsMCwxLjMsMCwyLDAuMWM0LjQsMC43LDQuOSw0LjQsNC45LDZjMCwxLjMtMC4yLDMuMS0xLjMsNC42QzU3LDM5LjMsNTUuMyw0MCw1Myw0MGMtMC41LDAtMS4yLDAtMS45LDANCgkJQzUxLjEsMzkuOCw1MS4xLDI3LjMsNTEuMSwyNy4yeiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik02Ny43LDI1LjZoLTMuMWwwLDAuNGwwLDBjMC4zLDAuMSwwLjUsMC43LDAuNSwxLjNsMCwxNC4xaDIuNkw2Ny43LDI1LjZMNjcuNywyNS42TDY3LjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMTIwLjcsMjUuNmgtMy4xbDAsMC40bDAsMGMwLjMsMC4xLDAuNSwwLjcsMC41LDEuM3YxNC4xaDIuNkwxMjAuNywyNS42TDEyMC43LDI1LjZMMTIwLjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNNDQuNiwyNS42aC04LjhsMC4xLDAuNGwwLDBjMC4yLDAuMSwwLjUsMC43LDAuNSwxLjRsMCwxNGg4LjhsMC42LTIuOGwtMC40LTAuMWwtMC4xLDAuMg0KCQljLTAuNywxLjEtMS41LDEuMy00LDEuM2MtMC45LDAtMS44LTAuMS0yLjQtMC4xYzAtMC4xLDAtNi4zLDAtNi40YzAuMSwwLDQuNSwwLDQuNSwwVjMyYzAsMC00LjMsMC00LjUsMGMwLTAuMSwwLTQuOCwwLTQuOQ0KCQljMC4xLDAsMy42LDAsMy42LDBjMC44LDAsMS43LDAuOCwxLjgsMS4zbDAsMC4xbDAuNCwwTDQ0LjYsMjUuNkw0NC42LDI1LjZMNDQuNiwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xNTcuNCwyNS42aC04LjhsMCwwLjRsMCwwYzAuMiwwLjEsMC41LDAuNiwwLjUsMS40bDAsMTRoOC44bDAuNi0yLjhsLTAuNC0wLjFsLTAuMSwwLjINCgkJYy0wLjcsMS4xLTEuNSwxLjMtNCwxLjNjLTAuOSwwLTEuOC0wLjEtMi40LTAuMWMwLTAuMSwwLTYuMywwLTYuNGMwLjEsMCw0LjUsMCw0LjUsMFYzMmMwLDAtNC4zLDAtNC41LDBjMC0wLjEsMC00LjgsMC00LjkNCgkJYzAuMSwwLDMuNiwwLDMuNiwwYzEsMCwxLjcsMC44LDEuNywxLjN2MC4xbDAuNCwwTDE1Ny40LDI1LjZMMTU3LjQsMjUuNkwxNTcuNCwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik05MCwyMi43Yy0wLjksMC43LTIsMS45LTIuMSw0YzAsMCwwLDAsMCwwLjFjMCwyLjUsMS42LDMuOSw0LjIsNS4yYzAsMCwwLDAsMCwwYzAuMSwwLjEsMC4zLDAuMiwxLDAuNQ0KCQljMi4yLDEuMSwzLjcsMS45LDMuNyw0LjFjMCwwLjgtMC4zLDEuOS0xLjEsMi43Yy0wLjcsMC43LTEuNiwxLTIuNywxYy0zLjMsMC00LjUtMi45LTQuOC00LjJsLTAuMS0wLjJsLTAuNiwwLjFsMC4yLDQuMUw4OCw0MA0KCQljMS4xLDAuNiwyLjgsMS42LDUuNCwxLjdjMS44LDAsMy42LTAuNyw0LjktMmMxLjEtMS4xLDEuNy0yLjUsMS43LTRjMC0zLjMtMi40LTQuNi00LjktNS45bC0wLjUtMC4zYy0yLjYtMS4zLTMuOC0yLjEtMy44LTMuNw0KCQljMC0xLjEsMC45LTIuOSwzLjEtMi45YzIuNiwwLDQsMiw0LjMsMy4ybDAuMSwwLjJsMC42LTAuMWwtMC4yLTMuNmwtMC4xLTAuMWMtMS41LTEtMy40LTEuMi00LjItMS4yQzkyLjYsMjEuNCw5MS4xLDIxLjksOTAsMjIuN3oNCgkJIi8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTEyNSwyOS42TDEyNSwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGMwLDAsMC44LDAuNCwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuOSwwLjYtMi4xLDIuNC0yLjENCgkJYzIuMSwwLDMsMS42LDMuMiwyLjRsMC4xLDAuMmwwLjUtMC4xbC0wLjItMi45bC0wLjEtMC4xYy0xLjItMC44LTIuNy0wLjktMy4zLTAuOUMxMjcuNSwyNS41LDEyNSwyNi45LDEyNSwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMzYuOCwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuNSwwLjItMS4xLDAuNi0xLjUNCgkJYzAuNC0wLjQsMS0wLjYsMS43LTAuNmMyLjEsMCwzLDEuNiwzLjIsMi40bDAuMSwwLjJsMC41LTAuMWwtMC4yLTIuOWwtMC4xLTAuMWMtMS4yLTAuOC0yLjctMC45LTMuMy0wLjkNCgkJQzEzOS40LDI1LjUsMTM2LjgsMjYuOSwxMzYuOCwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMTQuMiwyNS42bC0yLjEsMGwwLDAuNGwwLDBjMC4xLDAuMSwwLjQsMC4zLDAuNCwxLjNsMCw5YzAsMS43LTAuNiwzLjgtMy43LDMuOGMtMi45LDAtMy41LTEuNy0zLjUtNC4zDQoJCWwwLTEwLjJoLTMuM2wwLDAuNGwwLDBjMC4yLDAuMSwwLjYsMC41LDAuNiwxLjR2OC40YzAsNS4yLDMuNCw1LjgsNiw1LjhjMS4zLDAsNS40LTAuNCw1LjQtNS4zTDExNC4yLDI1LjZMMTE0LjIsMjUuNnoiLz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTE4MC4xLDIxLjFjMS45LDAuNiwzLjgsMS40LDUuOSwyLjZjLTUuMS04LjQtMTQuMS0xNy41LTIzLTIzLjRjMi4zLDIuMyw2LDcuMyw3LDEyLjYNCgkJCUMxNzMuNiwxNS41LDE3NywxOC4zLDE4MC4xLDIxLjF6Ii8+DQoJCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xODAuMSwyMS4xYy00LjQtMS40LTguMS0xLjUtMTAuOC0xLjJjMS0yLjMsMS4xLTQuNywwLjctN2MtNi43LTQuOC0xNC4yLTktMjEuMy0xMi4xDQoJCQljNS4yLDMuNSwxMSwxMy44LDEzLjQsMjQuOGM1LjItMS41LDEzLjEtMi42LDIzLjQsMC45QzE4My44LDI0LjcsMTgyLDIyLjksMTgwLjEsMjEuMXoiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE2OS45LDEyLjljMC40LDIuMywwLjMsNC43LTAuNiw3YzIuOC0wLjMsNi41LTAuMiwxMC44LDEuMkMxNzcsMTguMywxNzMuNiwxNS41LDE2OS45LDEyLjl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=" alt="Back to the home page." role="img" width="186" height="42" itemprop="logo" class="mod_logo_image"> </span> investigating market behavior time series datasets and developing algorithmic trading strategies <span class="tech-tags">Gamma Trading</span><span class="tech-tags">Volatility Prediction</span><span class="tech-tags">R</span><span class="tech-tags">Scala</span><span class="tech-tags">C# </span>   </li>
+		<li>Software Developer at <span class="employer"><img alt="Tufts Medical Center" src="logo-tufts-medical-center.png"> </span> developing a Personalized Oncology Drug Suggestion Tool <span class="tech-tags">Reinforcement Learning</span><span class="tech-tags">Matlab</span><span class="tech-tags">PHP </span>  </li>
+		<li>Neuroscience Researcher at <span class="employer"><img alt="University Of Texas At Dallas" src="UTD-black-logo.png"> </span> leading a Guanfacine Selective Attention inVivo Study  <span class="tech-tags">Neurobiology</span><span class="tech-tags">Adrenergic receptors</span><span class="tech-tags">Matlab </span> </li>
 		<!-- <li>Research Assistant at <span class="employer">University of Texas Dallas</span> doing Experiment Automation   <span class="tech-tags">  Electrical Engineering, Ope3rant Chamber, Matlab  </span> </li> -->
+	</ul>
+</div>
+
+
+	<spacer>
+		<br>
+<div class="block">
+	<div class="pagebreak"> </div>
+<h2 class="descriptiveText"> Education </h2>
+<div class="heading thesis"><p> Master Thesis at <img class="inline-logo" src="logo-ethz.png" href="https://www.ethz.ch" alt="ETH Zurich"> Under <a href="http://www.da.inf.ethz.ch/index.php" >Thomas Hoffmann</a> <br> <a href="master-thesis-Ruben-Wolff-Distributed-Structured-Prediction-For-3D-Image-Segmentation.pdf" >  Distributed Structured Prediction For 3D Image Segmentation  </a> <span class="tech-tags">Spark</span><span class="tech-tags">Scala</span> </p>
+
+</div>   
+<img class="content-img"   src="theis_image_placeholder.png">
+
+<div class="block">
+	<spacer>
+		<br>
+<div class="heading thesis"><p> Bachelor Thesis at <img class="inline-logo" src="utd_logo.png" href="https://www.utdallas.edu/" alt="UT Dallas"> Under <a href="https://scholar.google.com.mx/citations?user=Cf164ZMAAAAJ&hl=en" >Marco Atzori</a> <br> Thesis: <a href="bs-thesis-doc.pdf" > The α2 Agonist Guanfacine Reinstates Amphetamine-Disrupted Latent Inhibition in Rats  </a>  
+Related :
+<a href="bs-thesis-related-pub.pdf"> a-Adrenergic receptors in auditory cue detection: a2 receptor blockade suppresse false alarm responding in the rat</a> 
+</div>
+<img class="content-img"   src="li-thesis-conference-poster.png"> 
+
+
+
+
+
+</div>
+<div class="block"> 		 
+	<spacer>
+		<br>
+<h2 class="descriptiveText"> Past Talks </h2>
+<div class="block">
+	<ul>
+	<li> Automating insurance claim processing: Using NLP methods to learn sparse spaces - at - SDS 2018 <a href="https://sds2018.ch/program-2018/automating-insurance-claim-processing-using-nlp-methods-to-learn-sparse-spaces" > Slides </a> </li>
+	<li> The surprising Utility of NLP algorithms on non Text data  - at - SwissText 2018 - <a href="https://www.swisstext.org/accepted.html#swiss"> agenda </a> </li>
+	<li> Machine Learning mustn't be a Black box - at - Certificate of Advanced Studies ZFH in Claims Management (12 ECTS)  - <a href="ZHAW_Claims_Processing_Automation_20180419.pdf">slides</a> </li> 
+	<li> Real Life Benchmarking - at - SQL server 2016 launch event - <a href="http://www.d1-solutions.com/fileadmin/user_upload/d1solutions/Insights/Real-Life-Benchmark-SQL-Server-2016-Joonas-Asikainen-Ruben-Wolff-Simon-Hefti-Hans-Peter-Graenicher-D1-Solutions-Zuerich.pdf"> slides </a></li>
+	<li> Digitize the Data Store - at - Common Sense 1702 - <a href="http://www.d1-solutions.com/fileadmin/user_upload/d1solutions/Events/Presentations/Digitize_The_Datastore_-_Common_Sense_17_02_D_ONE_Zurich_Ruben_Wolff.pdf"> slides </a> - <a href="https://www.pscp.tv/DataDrivenValue/1PlKQQnQNadKE"> video </a></li> 
 	</ul>
 </div>
 
