@@ -89,28 +89,21 @@
 				max-width: 90vw;
 			}
 			.Profile-Pic{
-				max-width: 70vw;
+				max-width: 40vw;
 			}
+		}
 		@media print {
     .pagebreak { page-break-before: always; } /* page-break-after works, as well */
-    @media print 
-{
-    @page {
-      size: A4; /* DIN A4 standard, Europe */
-      margin:0;
-    }
-    html, body {
-        width: 210mm;
-        /* height: 297mm; */
-        height: 282mm;
-        background: #FFF;
-        overflow:visible;
-        padding :30mm;
+    .container {
+        display: inline;
     }
 
+	}
+	body {
+        overflow: visible;
 }
-}
-		}
+
+		
 	</style>
 	<script type="text/javascript" > 
 
@@ -119,7 +112,7 @@
 		}
 	</script>
 </head>
-<title>Data Science Consulting - Ruben Wolff</title>
+<title> Ruben Wolff - Homepage - Resume</title>
 <body onload="antibot()">
 
 
@@ -133,7 +126,8 @@
             
   
 	 	</br>
-	 	 <a href="https://www.linkedin.com/in/ruben-wolff/"> linkedin.com/in/ruben-wolff/ </a></p>
+	 	 <a href="https://www.linkedin.com/in/ruben-wolff/"> linkedin.com/in/ruben-wolff </a> <br>
+	 	 <a href="https://anchor.fm/ruben-wolff">anchor.fm/ruben-wolff </a></p>
               
                 
 </div>
@@ -150,18 +144,22 @@
 <div class="block">
 	<ul>
 		<li>
-		Designed data architecture and incentive engineering on the decentralized "LinkedIn Killer". The product idea is simple: reproduce the recruiting features of LinkedIn on a community owned federated infrastructure with revenue split between users, investors and recruiters on-chain.
+		Designed data architecture and incentive engineering on the decentralized "LinkedIn Killer". The product idea is simple: reproduce the recruiting features of LinkedIn on community owned federated infrastructure with revenue split between users, investors and recruiters on-chain.
 		<ul>Company: Stealth mode startup with a Ukrainian core team. The project is on hold since the beginning of the Russian invasion of Ukraine.</ul>	
 		<ul><span class="tech-tags">Solidity</span><span class="tech-tags">Postgres</span><span class="tech-tags">Kafka</span></ul>
 		</li>
+		<br>
 		<li> Designed and lead the implementation team for a new enterprise wide real time message bus. The new system could auto-scale up to 30000 messages per second which could be read via streaming, big data bulk or API access with full access control over active directory. Real time Machine learning models where utilized to align multiple IOT sensors for most accurate ball and player tracking as well as player action classification. <ul> Consulting Client: Sports events company in the top 5 worldwide</ul><ul><span class="tech-tags">Kafka</span><span class="tech-tags">Kubernetes</span><span class="tech-tags">Azure</span><span class="tech-tags">Flink</span> </ul> </li>
 	</ul>
 <h2 class="descriptiveText"> Past Independent Consulting </h2>
 <div class="block">
 <ul>
 		<li> Prototyped a series of models to improve "eDiscovery" like work in the Swiss legal context for one of the countries largest white collar crime cases. Models included NLI (sentence contradiction / agreement classification), semantic document similarity search, document classification image+text and simple OCR.  <ul> Client: Initially a Swiss law firm but now the project as spun out into a separate company competing with Relativity in the Swiss market</ul> <ul> <span class="tech-tags">Legal Tech</span> <span class="tech-tags">NLP</span><span class="tech-tags">XLM-roberta</span><span class="tech-tags">BERT</span><span class="tech-tags">DistilBERT</span><span class="tech-tags">FAISS</span> </ul> </li>
+		
 		<li> Machine learning advisor for a oracle node reputation scoring system. <ul> Client: small community governed oracle network on Binance smartchain</a> </ul> <ul><span class="tech-tags">Blockchain</span><span class="tech-tags">Binance Smartchain</span> </ul>  </li>
+		 
 		<li> Advanced predictive risk models (for NEC, ROP, IVH, CLD, and Sepsis) for the neonatal ICU. <ul>Client: One of the largest Neonatal care providers in the USA  </ul><ul> <span class="tech-tags">Deep learning</span><span class="tech-tags">H2O</span><span class="tech-tags">R</span> </ul> </li>		
+		 
 		<li> Length of Stay prediction in burn patients. <ul> Client: Altonaer Children’s Hospital, Hamburg  </ul><ul> <span class="tech-tags">Python</span><span class="tech-tags">Deep learning</span><span class="tech-tags">XGBoost</span>  </ul></li>	
 	</ul>
 </div>
@@ -172,12 +170,12 @@
 	<ul>Funding: Angel</ul>
 	<ul>Conclusion: B2B data access agreements achieved revenue stage. Operations and sales has been handed off to a third party.</ul>
 	</li>
-
+<br>
 	<li><span class="employer"><a href="http://literaturereview.net/"><img src="litrev.png"></img></a><span> the AI that reads pubmed for you. This NLP project aimed to create automated literature review on the fly every day as new publications appear on pubmed.gov and clinicaltrials.gov. The target customers were medical directors in big pharma who need to make daily decisions on a diversity of drugs and conditions and have little time to read but also can not rely on the always out of date published literature reviews. The machine learning model first performs named entity recognition for interventions(drugs), conditions(MeSH) and outcome measures (such as mOS, PFS etc.) followed by a linking model to group together the outcome number to the appropriate study arm. This first version of the system was focused on clinical oncology only.  
 		<ul>Funding: Entrepreneur First</ul>
 		<ul>Conclusion: No product market fit; unlike our early adopters the broader market expected a level of accuracy and granularity only possible by full human curation </ul>
 	</li>
-
+<br>
 	<li>Neoglia LTD <span class="employer"><img src="neoglia.jpeg"></img><span>  was a London based health tech startup which I co-founded with the goal of increasing the utility of sensitive medical data siloed in hospital EHR. We prototyped a federated machine learning approach where clinical data would remain within the individual hospitals servers while allowing pharma companies to build models on the data from all participating hospitals.
 		<ul>Funding: Entrepreneur First</ul>
 		<ul>Conclusion: No product market fit; most major players had unpublicized alternative means of accessing sensitive data via research collaborations or curated anonymized downloadable datasets</ul>
